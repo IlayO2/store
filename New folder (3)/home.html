@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreetCore Store</title>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="images/logo.png" alt="Logo"></div>
+    <h1>StreetCore</h1>
+    <div class="menu">
+      <a href="login.html">התחברות</a>
+      <a href="register.html">הרשמה</a>
+      <a href="help.html">עזרה</a>
+      <a href="join.html">הצטרפו אלינו</a>
+    </div>
+    <div class="icons">
+      <img src="images/heart.png" id="favorites-icon" alt="Favorites" onclick="window.location.href='favorites.html'">
+      <img src="images/cart.png" id="cart-icon" alt="Cart" onclick="window.location.href='cart.html'">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="חפש מוצר...">
+        <span>🔍</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="categories">
+    <button data-category="women" class="active">נשים</button>
+    <button data-category="men">גברים</button>
+    <button data-category="kids">ילדים</button>
+    <button data-category="new">חדש!</button>
+  </div>
+
+  <div class="products-grid" id="products-container"></div>
+
+  <script type="module" src="firebas.js"></script>
+  <script type="module" src="home.js"></script>
+</body>
+</html>

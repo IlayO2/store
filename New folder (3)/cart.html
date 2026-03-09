@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>סל קניות - StreetCore Store</title>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="images/logo.png" alt="Logo"></div>
+    <h1>StreetCore</h1>
+    <div class="menu">
+      <a href="login.html">התחברות</a>
+      <a href="register.html">הרשמה</a>
+      <a href="help.html">עזרה</a>
+      <a href="join.html">הצטרפו אלינו</a>
+    </div>
+  </nav>
+
+  <main style="display:flex; justify-content:space-between; padding:20px;">
+    <div id="cart-items" style="width:65%;"></div>
+    <div id="cart-summary" style="width:30%; padding:20px; background:#fff; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+      <h2>סיכום הזמנה</h2>
+      <p id="subtotal">סכום: ₪0</p>
+      <p id="shipping">משלוח: ₪30</p>
+      <p id="total">סה"כ: ₪0</p>
+      <button id="checkout-btn" style="padding:10px 20px; margin-top:10px; cursor:pointer;">תשלום באשראי</button>
+    </div>
+  </main>
+
+  <script type="module" src="firebas.js"></script>
+  <script type="module" src="cart.js"></script>
+</body>
+</html>

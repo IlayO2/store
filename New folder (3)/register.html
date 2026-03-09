@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<title>StreetCore - פרטי משתמש</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="auth-box">
+  <h2>StreetCore</h2>
+  <p>השלים את פרטי המשתמש</p>
+
+  <input type="text" id="full-name" placeholder="שם מלא">
+  <select id="gender">
+    <option value="" disabled selected>בחר מין</option>
+    <option value="male">זכר</option>
+    <option value="female">נקבה</option>
+    <option value="other">אחר</option>
+  </select>
+
+  <h3>פרטי כניסה</h3>
+  <input type="password" id="password" placeholder="סיסמא (לפחות 5 תווים עם מספר)">
+  <button id="toggle-password">הצג/הסתר סיסמא</button>
+
+  <input type="tel" id="phone" placeholder="מספר טלפון">
+
+  <p>
+    <input type="checkbox" id="terms"> אני מאשר את התנאים ואת <a href="privacy.html" target="_blank">מדיניות הפרטיות</a> של StreetCore
+  </p>
+
+  <button id="complete-register">סיום הרשמה</button>
+  <button onclick="window.location.href='index.html'">חזרה לדף אימייל</button>
+</div>
+
+<button id="lang-switch">English</button>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
